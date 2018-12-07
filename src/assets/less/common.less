@@ -1,0 +1,178 @@
+.content {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.el-main{
+  margin-bottom: 20px;
+}
+.content-collapse {
+  left: 65px;
+}
+
+.header .logo {
+  padding-left: 20px;
+}
+// 左浮动
+.pull-left{
+  float: left;
+}
+// 右浮动
+.pull-right{
+  float: right;
+}
+// 清楚浮动的类
+.clearFloat::after {
+  content: "";
+  height: 0;
+  display: block;
+  overflow: hidden;
+  line-height: 0;
+  clear: both;
+}
+
+.clearFloat {
+  zoom: 1;
+}
+
+.h1 {
+  font-size: 20px;
+}
+.h2 {
+  font-size: 18px;
+}
+.h3 {
+  font-size: 16px;
+}
+.h4 {
+  font-size: 15px;
+}
+.text-1 {
+  font-size: 14px;
+}
+.text-2 {
+  font-size: 13px;
+}
+.text-3 {
+  font-size: 12px;
+}
+// 字体颜色
+.font-lightgray{
+  color: #cccccc;
+}
+.font-gray{
+  color: #b7b7b7;
+}
+.font-333{
+  color: #333;
+}
+.font-red{
+  color: #f35958;
+}
+.font-blue{
+  color: #0aafdf;
+}
+
+.c-normal {
+  color: #20a8d8;
+}
+
+a{
+   text-decoration: none;   
+}
+
+//小标签
+.tab-blue-mini{
+  padding: 2px 6px;
+  background: #cccccc;
+  color: #fff;
+  border-radius: 10px;
+  margin-right: 10px;
+
+}
+.tab-gray-mini{
+  padding: 2px 6px;
+  background: #cccccc;
+  color: #fff;
+  border-radius: 10px;
+  margin-right: 10px;
+ 
+}
+.tab-active{
+  background: #20a8d8!important;
+}
+
+// 页面头部导航样式
+.head-tab--nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 0 20px;
+  color:#b7b7b7; 
+  background-color: #fff;
+  border-bottom: 1px solid #e5e6e6;
+  .head-tab {
+    display: flex;
+    span {
+      padding: 0 10px;
+      margin-right: 20px;
+      line-height: 60px;
+      position: relative;
+      cursor: pointer;
+      &:first-child {
+        margin-right: 0;
+      }
+      &.router-link-exact-active {
+        color: #20a8d8;
+      }
+      &.router-link-exact-active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #20a8d8;
+      }
+    }
+  }
+  .exchange {
+
+    .head-nav {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+//删除形弹框样式
+.delTips {
+  padding: 45px 0;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+.el-dialog__title{
+	font-size: 16px;
+}
+
+.el-button + .el-button {
+  margin-left: 15px !important; 
+}
+
+// ::placeholder样式
+// .el-input__inner::-webkit-input-placeholder{
+//   color: #7c848e;
+// }
+// .el-input__inner::-moz-placeholder{  
+//     color: #7c848e;        
+// }
+// .el-input__inner:-ms-input-placeholder{  
+//     color: #7c848e;        
+// }

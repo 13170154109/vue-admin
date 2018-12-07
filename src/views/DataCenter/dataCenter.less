@@ -1,0 +1,173 @@
+// 统计中心公共样式
+.content {
+	.select-time{
+		padding: 0px 10px;
+		border-right: 1px solid #ccc;
+	}
+  .title {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .cnavas-schart {
+    width: 100%;
+    #myChart-trend {
+      width: 100%;
+    }
+  }
+  .select-province,
+  .select-city {
+    width: 120px;
+    margin-right: 10px;
+  }
+  .select-school {
+    margin-left: 10px;
+  }
+}
+.proportion-schart {
+  width: 100%;
+  > div {
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  .schart-left {
+    width: 50%;
+    margin-right: 0px;
+    float: left;
+  }
+  .schart-right {
+    width: 45%;
+    margin-left: 0px;
+    float: right;
+  }
+}
+
+.top-tab {
+  > p {
+    margin-bottom: 15px;
+  }
+  .el-row {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .el-col {
+    border-radius: 4px;
+    > p {
+      margin-bottom: 5px;
+    }
+    .top-title {
+      color: #cccccc;
+    }
+    .top-number {
+      font-weight: bold;
+    }
+    .top-tip {
+      color: #fff;
+      width: 90px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .top-tip-1 {
+      background: #5cc5f8;
+    }
+    .top-tip-2 {
+      background: #6ce3b2;
+    }
+    .top-tip-3 {
+      background: #f8cb00;
+    }
+    .top-tip-4 {
+      background: #f86c6b;
+    }
+  }
+  .bg-purple-dark {
+    background: #99a9bf;
+  }
+  .bg-purple {
+    // background: #d3dce6;
+  }
+  .bg-purple-light {
+    background: #e5e9f2;
+  }
+  .grid-content {
+    min-height: 36px;
+    .el-row {
+      padding-left: 20px;
+      border-right: 1px solid #ddd;
+      img {
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        margin-left: 25%;
+      }
+    }
+    .el-row-frist {
+      padding-left: 0px;
+    }
+  }
+  .el-row >.el-col:nth-of-type(4){
+    .grid-content .el-row{
+      border-right: none;
+    }
+  } 
+  .row-bg {
+    padding: 10px 0;
+    // background-color: #f9fafc;
+  }
+}
+.childAttendance,.employeeAttendance{
+  .financial-compared{
+    padding: 20px 0px 20px 0px;
+		margin: 0px 20px 20px 20px;
+		.el-table .cell{
+      padding-left: 10px;
+      text-align: center;
+		}
+	}
+	.compared-table{
+		margin: 20px 0px 20px 0px;
+	}
+  .cont-top{
+    padding: 0px 20px 0px 20px;
+  }
+}
+.top-tab{
+  a:nth-of-type(1){
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+// tab选择
+.years-tab-select{
+	color: #333;
+	font-size: 16px;
+}
+
+//select input样式
+.childAttendance,.employeeAttendance,.financialData,.gardenOverview{
+  .el-input__inner{
+    background-color: #f4f5f7!important;
+  }
+  .el-input__inner::-webkit-input-placeholder{
+    color: #7c848e;
+  }
+  .el-input__inner::-moz-placeholder{
+      color: #7c848e;        
+  }
+  .el-input__inner:-ms-input-placeholder{
+      color: #7c848e;        
+  }
+}
+
+@media (min-width: 1660px) and (max-width: 1920px) {
+  .proportion-schart .schart-right{
+    width: 46.5%;
+  }
+}
